@@ -13,8 +13,11 @@ import json
 image_path = r"DEMO\generated\beach_bannerbg03_1X1_500.jpg"  # Replace with the actual file path
 img = Image.open(image_path, "r")
 
-fig = px.imshow(img)
+fig = px.imshow(img) ##
 fig.update_layout(dragmode="drawrect")
+## fig.show()
+
+
 
 app = Dash(__name__)
 app.layout = html.Div(
