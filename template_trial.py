@@ -1,8 +1,3 @@
-from PIL import Image, ImageColor,ImageFilter, ImageDraw, ImageFont
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
-import imageio.v3 as iio
-
 # Necessary imports
 import numpy as np
 import random
@@ -21,7 +16,12 @@ import io
 import sys,os 
 from rembg import remove
 
-# *********************** Function o create blank canvas for banner **************************
+from PIL import Image, ImageColor,ImageFilter, ImageDraw, ImageFont
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import imageio.v3 as iio
+
+# *********************** Function to create blank canvas for banner **************************
 class Canvas:
     def __init__(self, width, height, mode, color):
         self.width = width
@@ -169,6 +169,7 @@ data = [
 ]
 
 # ********************** Function to get random coordinate for different Elements of banner  *******************
+
 class CoordinateUtils:
     @staticmethod
     def alignmentCoorMid(data):
@@ -215,7 +216,7 @@ class CoordinateUtils:
 
 
 
-# ********************** Function to paste logo into the defined area of banner  *******************
+# ********************** Function to paste elements into the defined area of banner  *******************
 
 # Background removal 
 def process_image(input,filename):

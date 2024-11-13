@@ -7,6 +7,7 @@ import matplotlib.image as mpimg
 
 import os
 
+# This class likely creates banners or displays messages in a visually appealing way.
 class BannerCreator:
     def __init__(self, background_image_path, coords):
         # Open the background image
